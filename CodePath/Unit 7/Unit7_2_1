@@ -1,0 +1,6 @@
+#Problem 1
+def find_cruise_length(cruise_lengths, vacation_length):
+    pass
+
+print(find_cruise_length([9, 10, 11, 12, 13, 14, 15], 13)) #true 
+print(find_cruise_length([8, 9, 12, 13, 13, 14, 15], 11)) #false

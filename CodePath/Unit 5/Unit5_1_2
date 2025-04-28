@@ -1,0 +1,29 @@
+class Player():
+    def __init__(self, character, kart):
+        self.character = character
+        self.kart = kart
+        self.items = []
+        
+    def get_player(self):
+        return f"{self.character} driving the {self.kart}"
+    
+    def set_character(self, name):
+        valid_names = ["Mario", "Luigi", "Peach", "Yoshi", "Toad", "Wario", "Donkey Kong","Bowser"]
+        if name in valid_names:
+            self.character = name
+            print("Character updated")
+        else:
+            print("Invalid character")
+
+player_one = Player("Yoshi", "Super Blooper")
+player_two = Player("Bowser", "kart")
+player_one.kart = "Dolphin Dasher"
+#print(f"Match: {player_two.get_player()} vs {player_one.get_player()}")
+#print(player_one.get_player())
+
+player_three = Player("Donkey Kong", "Standard Kart")
+
+player_three.set_character("Peach")
+print(player_three.character)
+player_three.set_character("Baby Peach")
+print(player_three.character)
